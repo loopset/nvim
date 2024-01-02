@@ -12,8 +12,8 @@ return {
         enabled = false,
       },
       trigger_events = {
-        immediate_save = { "BufLeave" },
-        defer_save = { "InsertLeave" , "TextChanged"},
+        immediate_save = { "BufLeave", "InsertLeave", "TextChanged" },
+        defer_save = {},
         cancel_defered_save = { "InsertEnter" },
       },
       condition = function(buf)
@@ -27,7 +27,7 @@ return {
           return true
         end
         return false
-      end
+      end,
     },
     config = function(_, opts)
       require("auto-save").setup(opts)
