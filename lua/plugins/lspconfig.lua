@@ -6,6 +6,9 @@ return {
         underline = false,
         update_in_insert = true,
       },
+      inlay_hints = {
+        enabled = false,
+      },
       servers = {
         clangd = {
           cmd = {
