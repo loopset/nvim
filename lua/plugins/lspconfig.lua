@@ -25,6 +25,15 @@ return {
             clangdFileStatus = false,
           },
         },
+        pyright = {
+          settings = {
+            analysis = {
+              autoSearchPaths = true,
+              useLibraryCodeForTypes = true,
+              diagnosticMode = "openFilesOnly",
+            },
+          },
+        },
       },
     },
   },

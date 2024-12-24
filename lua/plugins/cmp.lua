@@ -66,6 +66,10 @@ return {
         disallow_prefix_unmatching = true,
         disallow_symbol_nonprefix_matching = false,
       }
+      -- Disable ghost text
+      opts.experimental = {
+        ghost_text = false,
+      }
     end,
   },
 }

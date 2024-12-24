@@ -1,9 +1,11 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.lang.clangd"
+    "lazyvim.plugins.extras.editor.telescope",
+    "lazyvim.plugins.extras.lang.clangd",
+    "lazyvim.plugins.extras.lang.python"
   ],
   "news": {
-    "NEWS.md": "4828"
+    "NEWS.md": "10960"
   },
-  "version": 3
+  "version": 7
 }
