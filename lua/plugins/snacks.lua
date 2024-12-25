@@ -5,6 +5,15 @@ return {
       bigfile = { enabled = true },
       statuscolumn = { enabled = true },
       dashboard = {
+        preset = {
+          header = [[
+███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
+████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
+██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
+██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
+██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
+╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝]],
+        },
         sections = {
           { section = "header" },
           { section = "keys", gap = 1, padding = 1 },
@@ -19,7 +28,9 @@ return {
           },
         },
       },
-      scope = {enabled = true},
+      scope = { enabled = true },
+      gitbrowse = { enabled = true },
+      scroll = { enabled = false },
     },
   },
 }

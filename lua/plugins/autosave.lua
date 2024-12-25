@@ -3,18 +3,10 @@ return {
     "okuuva/auto-save.nvim",
     event = { "BufEnter" },
     opts = {
-      -- opts.execution_message = {
-      --   message = function()
-      --     return "Saviiing"
-      --   end,
-      -- }
-      execution_message = {
-        enabled = false,
-      },
       trigger_events = {
         immediate_save = { "BufLeave", "InsertLeave", "TextChanged" },
         defer_save = {},
-        cancel_defered_save = { "InsertEnter" },
+        cancel_deferred_save = { "InsertEnter" },
       },
       condition = function(buf)
         local utils = require("auto-save.utils.data")

@@ -16,20 +16,20 @@ return {
     signature = { enabled = false },
 
     sources = {
-      min_keyword_length = function(_) -- disable autocompletion for comments
-        -- in cpp, one-line comments are not disabled bc tree-sitter tags them as "compound_statement"
-        local def = 0
-        local ctx = vim.treesitter.get_node()
-        if not ctx then
-          return def
-        end
-        local type = ctx:type()
-        if type == "comment" or type == "line_comment" or type == "block_comment" then
-          return 120
-        else
-          return def
-        end
-      end,
+      -- min_keyword_length = function(_) -- disable autocompletion for comments
+      --   -- in cpp, one-line comments are not disabled bc tree-sitter tags them as "compound_statement"
+      --   local def = 0
+      --   local ctx = vim.treesitter.get_node()
+      --   if not ctx then
+      --     return def
+      --   end
+      --   local type = ctx:type()
+      --   if type == "comment" or type == "line_comment" or type == "block_comment" then
+      --     return 120
+      --   else
+      --     return def
+      --   end
+      -- end,
 
       providers = {
         lsp = {
